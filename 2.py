@@ -13,6 +13,9 @@ def judge():
     print("7.bild-德国图片报-1952")
     print("8.bloomberg")
     print("9.business-insider-美国科技博客")
+    print("10.The Economist-经济学人-1843")
+    print("11.Reuters-1851")
+    print("q-quit")
     url=""
     b=input("please input:")
     a=str(b)
@@ -53,6 +56,16 @@ def judge():
         print("*"*25+"business-insider"+"*"*25)
         url="https://newsapi.org/v1/articles?source=business-insider&sortBy=top&apiKey=f64790cbb13e402aaa30d41c6f979db1"
         news="business-insider"
+    elif(a=='10'):
+        print("*"*25+"business-insider"+"*"*25)
+        url="https://newsapi.org/v1/articles?source=the-economist&sortBy=top&apiKey=f64790cbb13e402aaa30d41c6f979db1"
+        news="The Economist"
+    elif(a=='11'):
+        print("*"*25+"business-insider"+"*"*25)
+        url="https://newsapi.org/v1/articles?source=reuters&sortBy=top&apiKey=f64790cbb13e402aaa30d41c6f979db1"
+        news="reuters"
+    elif(a=='q'):
+        print("end")    
     else:
         print("a=1")
     connect(url,news)
